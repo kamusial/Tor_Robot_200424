@@ -1,491 +1,726 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.11.2 on win32)" generated="2024-04-20T14:23:18.346541" rpa="false" schemaversion="5">
-<suite id="s1" name="3 Petle" source="C:\Users\vdi-student\Desktop\Tor_Robot_200424\3_petle.robot">
-<test id="s1-t1" name="For loops in Range" line="10">
+<robot generator="Robot 7.0 (Python 3.11.2 on win32)" generated="2024-04-20T15:03:14.443021" rpa="false" schemaversion="5">
+<suite id="s1" name="5 Gotujmy" source="C:\Users\vdi-student\Desktop\Tor_Robot_200424\5_gotujmy.robot">
+<test id="s1-t1" name="Registraion Of Multiple User" line="39">
+<kw name="Open My Browser" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:14.680512" level="INFO">Opening browser 'Chrome' to base url 'https://gotujmy.pl/forum/'.</msg>
+<arg>https://gotujmy.pl/forum/</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-20T15:03:14.680486" elapsed="3.820951"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-04-20T15:03:18.501437" elapsed="0.135665"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-20T15:03:21.638418" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-20T15:03:18.638177" elapsed="3.000241"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>//*[@id="qc-cmp2-ui"]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-04-20T15:03:21.638418" elapsed="0.292698"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:21.932212" level="INFO">Clicking button '//*[@id="qc-cmp2-ui"]/div[2]/div/button[2]'.</msg>
+<arg>//*[@id="qc-cmp2-ui"]/div[2]/div/button[2]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-20T15:03:21.932212" elapsed="0.149893"/>
+</kw>
+<arg>click button</arg>
+<arg>//*[@id="qc-cmp2-ui"]/div[2]/div/button[2]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2024-04-20T15:03:21.931116" elapsed="0.150989"/>
+</kw>
+<status status="PASS" start="2024-04-20T15:03:14.679406" elapsed="7.402699"/>
+</kw>
 <for flavor="IN RANGE">
 <iter>
-<kw name="Log" owner="BuiltIn">
-<msg time="2024-04-20T14:23:18.378563" level="INFO">0</msg>
-<arg>${i}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-04-20T14:23:18.377551" elapsed="0.001012"/>
+<kw name="Registration In Forum">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:22.087014" level="INFO">Clicking element '//*[@id="navTop"]/nav/ul[1]/li[2]/a'.</msg>
+<arg>//*[@id="navTop"]/nav/ul[1]/li[2]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-20T15:03:22.087014" elapsed="0.686320"/>
 </kw>
-<if>
-<branch type="IF" condition="${i} == 3">
-<kw name="Log" owner="BuiltIn">
-<arg>${i}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" start="2024-04-20T14:23:18.378706" elapsed="0.000000"/>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:22.774329" level="INFO">Clicking button '/html/body/div[1]/div/div/div/div[2]/div/button[2]'.</msg>
+<msg time="2024-04-20T15:03:22.921284" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-30.png"&gt;&lt;img src="selenium-screenshot-30.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-04-20T15:03:22.921284" level="FAIL">Button with locator '/html/body/div[1]/div/div/div/div[2]/div/button[2]' not found.</msg>
+<arg>/html/body/div[1]/div/div/div/div[2]/div/button[2]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="FAIL" start="2024-04-20T15:03:22.774329" elapsed="0.149127">Button with locator '/html/body/div[1]/div/div/div/div[2]/div/button[2]' not found.</status>
 </kw>
-<status status="NOT RUN" start="2024-04-20T14:23:18.378706" elapsed="0.000000"/>
-</branch>
-<status status="PASS" start="2024-04-20T14:23:18.378706" elapsed="0.000000"/>
-</if>
+<arg>click button</arg>
+<arg>/html/body/div[1]/div/div/div/div[2]/div/button[2]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2024-04-20T15:03:22.774329" elapsed="0.149127"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:22.924516" level="INFO">Typing text 'a1email1@wwp.pl' into text field '//*[@id="f_cmu_email"]'.</msg>
+<arg>//*[@id="f_cmu_email"]</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-20T15:03:22.923456" elapsed="0.119670"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:23.043126" level="INFO">Typing text 'a1email1@wwp.pl' into text field '//*[@id="f_cmu_email2"]'.</msg>
+<arg>//*[@id="f_cmu_email2"]</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-20T15:03:23.043126" elapsed="0.093879"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:23.138012" level="INFO">Typing text 'pass1' into text field '//*[@id="f_cmu_password"]'.</msg>
+<arg>//*[@id="f_cmu_password"]</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-20T15:03:23.137005" elapsed="0.084035"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:23.222038" level="INFO">Typing text 'pass1' into text field '//*[@id="f_cmu_password2"]'.</msg>
+<arg>//*[@id="f_cmu_password2"]</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-20T15:03:23.221040" elapsed="0.081103"/>
+</kw>
+<kw name="Checkbox Should Not Be Selected" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:23.303141" level="INFO">Verifying checkbox '//*[@id="newsletter_agree"]' is not selected.</msg>
+<arg>//*[@id="newsletter_agree"]</arg>
+<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
+<status status="PASS" start="2024-04-20T15:03:23.302143" elapsed="0.040303"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:23.342446" level="INFO">Selecting checkbox '//*[@id="newsletter_agree"]'.</msg>
+<arg>//*[@id="newsletter_agree"]</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-20T15:03:23.342446" elapsed="0.074562"/>
+</kw>
+<kw name="Checkbox Should Not Be Selected" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:23.417008" level="INFO">Verifying checkbox '//*[@id="user_register_form"]/fieldset/label[2]/input' is not selected.</msg>
+<arg>//*[@id="user_register_form"]/fieldset/label[2]/input</arg>
+<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
+<status status="PASS" start="2024-04-20T15:03:23.417008" elapsed="0.032502"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:23.449510" level="INFO">Selecting checkbox '//*[@id="user_register_form"]/fieldset/label[2]/input'.</msg>
+<arg>//*[@id="user_register_form"]/fieldset/label[2]/input</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-20T15:03:23.449510" elapsed="0.063622"/>
+</kw>
+<kw name="Checkbox Should Not Be Selected" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:23.513132" level="INFO">Verifying checkbox '//*[@id="user_register_form"]/fieldset/label[3]/input' is not selected.</msg>
+<arg>//*[@id="user_register_form"]/fieldset/label[3]/input</arg>
+<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
+<status status="PASS" start="2024-04-20T15:03:23.513132" elapsed="0.033185"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:23.546317" level="INFO">Selecting checkbox '//*[@id="user_register_form"]/fieldset/label[3]/input'.</msg>
+<arg>//*[@id="user_register_form"]/fieldset/label[3]/input</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-20T15:03:23.546317" elapsed="0.067547"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:23.614867" level="INFO">Clicking button '//*[@id="user_register_form"]/fieldset/footer/button'.</msg>
+<arg>//*[@id="user_register_form"]/fieldset/footer/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-20T15:03:23.613864" elapsed="1.964052"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//*[@id="main_content"]/div/div/h1</arg>
+<arg>timeout=7</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-20T15:03:25.577916" elapsed="0.026000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:25.627913" level="INFO">${my_message} = Dziękujemy za założenie nowego konta.</msg>
+<var>${my_message}</var>
+<arg>//*[@id="main_content"]/div/div/h1</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-20T15:03:25.603916" elapsed="0.023997"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${my_message}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-04-20T15:03:25.627913" elapsed="0.001000"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${my_message}</arg>
+<arg>${message}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-04-20T15:03:25.628913" elapsed="0.000000"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:25.748594" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-31.png"&gt;&lt;img src="selenium-screenshot-31.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-04-20T15:03:25.628913" elapsed="0.119681"/>
+</kw>
+<arg>${emails}[${i}]</arg>
+<arg>${passwords}[${i}]</arg>
+<status status="PASS" start="2024-04-20T15:03:22.086014" elapsed="3.662580"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-04-20T15:03:25.748594" level="INFO">User a1email1@wwp.pl</msg>
+<arg>User ${emails}[${i}]</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-04-20T15:03:25.748594" elapsed="0.000000"/>
+</kw>
 <var name="${i}">0</var>
-<status status="PASS" start="2024-04-20T14:23:18.377551" elapsed="0.001155"/>
+<status status="PASS" start="2024-04-20T15:03:22.086014" elapsed="3.662580"/>
 </iter>
 <iter>
-<kw name="Log" owner="BuiltIn">
-<msg time="2024-04-20T14:23:18.378706" level="INFO">1</msg>
-<arg>${i}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-04-20T14:23:18.378706" elapsed="0.000000"/>
+<kw name="Registration In Forum">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:25.749711" level="INFO">Clicking element '//*[@id="navTop"]/nav/ul[1]/li[2]/a'.</msg>
+<arg>//*[@id="navTop"]/nav/ul[1]/li[2]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-20T15:03:25.749711" elapsed="0.901178"/>
 </kw>
-<if>
-<branch type="IF" condition="${i} == 3">
-<kw name="Log" owner="BuiltIn">
-<arg>${i}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" start="2024-04-20T14:23:18.378706" elapsed="0.000000"/>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:26.650889" level="INFO">Clicking button '/html/body/div[1]/div/div/div/div[2]/div/button[2]'.</msg>
+<msg time="2024-04-20T15:03:26.798030" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-32.png"&gt;&lt;img src="selenium-screenshot-32.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-04-20T15:03:26.798030" level="FAIL">Button with locator '/html/body/div[1]/div/div/div/div[2]/div/button[2]' not found.</msg>
+<arg>/html/body/div[1]/div/div/div/div[2]/div/button[2]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="FAIL" start="2024-04-20T15:03:26.650889" elapsed="0.148138">Button with locator '/html/body/div[1]/div/div/div/div[2]/div/button[2]' not found.</status>
 </kw>
-<status status="NOT RUN" start="2024-04-20T14:23:18.378706" elapsed="0.001010"/>
-</branch>
-<status status="PASS" start="2024-04-20T14:23:18.378706" elapsed="0.001010"/>
-</if>
+<arg>click button</arg>
+<arg>/html/body/div[1]/div/div/div/div[2]/div/button[2]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2024-04-20T15:03:26.650889" elapsed="0.148138"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:26.799027" level="INFO">Typing text 'a1email2@wwp.pl' into text field '//*[@id="f_cmu_email"]'.</msg>
+<arg>//*[@id="f_cmu_email"]</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-20T15:03:26.799027" elapsed="0.100474"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:26.899501" level="INFO">Typing text 'a1email2@wwp.pl' into text field '//*[@id="f_cmu_email2"]'.</msg>
+<arg>//*[@id="f_cmu_email2"]</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-20T15:03:26.899501" elapsed="0.089604"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:26.990105" level="INFO">Typing text 'pass2' into text field '//*[@id="f_cmu_password"]'.</msg>
+<arg>//*[@id="f_cmu_password"]</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-20T15:03:26.989105" elapsed="0.082578"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:27.071683" level="INFO">Typing text 'pass2' into text field '//*[@id="f_cmu_password2"]'.</msg>
+<arg>//*[@id="f_cmu_password2"]</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-20T15:03:27.071683" elapsed="0.077816"/>
+</kw>
+<kw name="Checkbox Should Not Be Selected" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:27.150505" level="INFO">Verifying checkbox '//*[@id="newsletter_agree"]' is not selected.</msg>
+<arg>//*[@id="newsletter_agree"]</arg>
+<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
+<status status="PASS" start="2024-04-20T15:03:27.150505" elapsed="0.029096"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:27.179601" level="INFO">Selecting checkbox '//*[@id="newsletter_agree"]'.</msg>
+<arg>//*[@id="newsletter_agree"]</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-20T15:03:27.179601" elapsed="0.067251"/>
+</kw>
+<kw name="Checkbox Should Not Be Selected" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:27.247851" level="INFO">Verifying checkbox '//*[@id="user_register_form"]/fieldset/label[2]/input' is not selected.</msg>
+<arg>//*[@id="user_register_form"]/fieldset/label[2]/input</arg>
+<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
+<status status="PASS" start="2024-04-20T15:03:27.247851" elapsed="0.044306"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:27.293157" level="INFO">Selecting checkbox '//*[@id="user_register_form"]/fieldset/label[2]/input'.</msg>
+<arg>//*[@id="user_register_form"]/fieldset/label[2]/input</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-20T15:03:27.292157" elapsed="0.087008"/>
+</kw>
+<kw name="Checkbox Should Not Be Selected" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:27.380171" level="INFO">Verifying checkbox '//*[@id="user_register_form"]/fieldset/label[3]/input' is not selected.</msg>
+<arg>//*[@id="user_register_form"]/fieldset/label[3]/input</arg>
+<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
+<status status="PASS" start="2024-04-20T15:03:27.380171" elapsed="0.028357"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:27.409510" level="INFO">Selecting checkbox '//*[@id="user_register_form"]/fieldset/label[3]/input'.</msg>
+<arg>//*[@id="user_register_form"]/fieldset/label[3]/input</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-20T15:03:27.409510" elapsed="0.063482"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:27.473974" level="INFO">Clicking button '//*[@id="user_register_form"]/fieldset/footer/button'.</msg>
+<arg>//*[@id="user_register_form"]/fieldset/footer/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-20T15:03:27.473974" elapsed="1.542318"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//*[@id="main_content"]/div/div/h1</arg>
+<arg>timeout=7</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-20T15:03:29.016292" elapsed="0.026010"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:29.058485" level="INFO">${my_message} = Dziękujemy za założenie nowego konta.</msg>
+<var>${my_message}</var>
+<arg>//*[@id="main_content"]/div/div/h1</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-20T15:03:29.042302" elapsed="0.016183"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${my_message}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-04-20T15:03:29.059485" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${my_message}</arg>
+<arg>${message}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-04-20T15:03:29.059485" elapsed="0.001001"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:29.174122" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-33.png"&gt;&lt;img src="selenium-screenshot-33.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-04-20T15:03:29.060486" elapsed="0.114642"/>
+</kw>
+<arg>${emails}[${i}]</arg>
+<arg>${passwords}[${i}]</arg>
+<status status="PASS" start="2024-04-20T15:03:25.749711" elapsed="3.425417"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-04-20T15:03:29.175128" level="INFO">User a1email2@wwp.pl</msg>
+<arg>User ${emails}[${i}]</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-04-20T15:03:29.175128" elapsed="0.000000"/>
+</kw>
 <var name="${i}">1</var>
-<status status="PASS" start="2024-04-20T14:23:18.378706" elapsed="0.001087"/>
+<status status="PASS" start="2024-04-20T15:03:25.748594" elapsed="3.426534"/>
 </iter>
 <iter>
-<kw name="Log" owner="BuiltIn">
-<msg time="2024-04-20T14:23:18.379793" level="INFO">2</msg>
-<arg>${i}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-04-20T14:23:18.379793" elapsed="0.000000"/>
+<kw name="Registration In Forum">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:29.176139" level="INFO">Clicking element '//*[@id="navTop"]/nav/ul[1]/li[2]/a'.</msg>
+<arg>//*[@id="navTop"]/nav/ul[1]/li[2]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-20T15:03:29.176139" elapsed="0.543168"/>
 </kw>
-<if>
-<branch type="IF" condition="${i} == 3">
-<kw name="Log" owner="BuiltIn">
-<arg>${i}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" start="2024-04-20T14:23:18.379793" elapsed="0.000000"/>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:29.719307" level="INFO">Clicking button '/html/body/div[1]/div/div/div/div[2]/div/button[2]'.</msg>
+<msg time="2024-04-20T15:03:29.856477" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-34.png"&gt;&lt;img src="selenium-screenshot-34.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-04-20T15:03:29.856477" level="FAIL">Button with locator '/html/body/div[1]/div/div/div/div[2]/div/button[2]' not found.</msg>
+<arg>/html/body/div[1]/div/div/div/div[2]/div/button[2]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="FAIL" start="2024-04-20T15:03:29.719307" elapsed="0.137170">Button with locator '/html/body/div[1]/div/div/div/div[2]/div/button[2]' not found.</status>
 </kw>
-<status status="NOT RUN" start="2024-04-20T14:23:18.379793" elapsed="0.000000"/>
-</branch>
-<status status="PASS" start="2024-04-20T14:23:18.379793" elapsed="0.000000"/>
-</if>
+<arg>click button</arg>
+<arg>/html/body/div[1]/div/div/div/div[2]/div/button[2]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2024-04-20T15:03:29.719307" elapsed="0.138178"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:29.857485" level="INFO">Typing text 'a1email3@wwp.pl' into text field '//*[@id="f_cmu_email"]'.</msg>
+<arg>//*[@id="f_cmu_email"]</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-20T15:03:29.857485" elapsed="0.104271"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:29.961756" level="INFO">Typing text 'a1email3@wwp.pl' into text field '//*[@id="f_cmu_email2"]'.</msg>
+<arg>//*[@id="f_cmu_email2"]</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-20T15:03:29.961756" elapsed="0.082560"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:30.045323" level="INFO">Typing text 'pass3' into text field '//*[@id="f_cmu_password"]'.</msg>
+<arg>//*[@id="f_cmu_password"]</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-20T15:03:30.044316" elapsed="0.079964"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:30.125278" level="INFO">Typing text 'pass3' into text field '//*[@id="f_cmu_password2"]'.</msg>
+<arg>//*[@id="f_cmu_password2"]</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-20T15:03:30.125278" elapsed="0.094242"/>
+</kw>
+<kw name="Checkbox Should Not Be Selected" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:30.220519" level="INFO">Verifying checkbox '//*[@id="newsletter_agree"]' is not selected.</msg>
+<arg>//*[@id="newsletter_agree"]</arg>
+<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
+<status status="PASS" start="2024-04-20T15:03:30.219520" elapsed="0.037001"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:30.256521" level="INFO">Selecting checkbox '//*[@id="newsletter_agree"]'.</msg>
+<arg>//*[@id="newsletter_agree"]</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-20T15:03:30.256521" elapsed="0.074517"/>
+</kw>
+<kw name="Checkbox Should Not Be Selected" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:30.331038" level="INFO">Verifying checkbox '//*[@id="user_register_form"]/fieldset/label[2]/input' is not selected.</msg>
+<arg>//*[@id="user_register_form"]/fieldset/label[2]/input</arg>
+<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
+<status status="PASS" start="2024-04-20T15:03:30.331038" elapsed="0.048481"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:30.380604" level="INFO">Selecting checkbox '//*[@id="user_register_form"]/fieldset/label[2]/input'.</msg>
+<arg>//*[@id="user_register_form"]/fieldset/label[2]/input</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-20T15:03:30.379519" elapsed="0.064580"/>
+</kw>
+<kw name="Checkbox Should Not Be Selected" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:30.445098" level="INFO">Verifying checkbox '//*[@id="user_register_form"]/fieldset/label[3]/input' is not selected.</msg>
+<arg>//*[@id="user_register_form"]/fieldset/label[3]/input</arg>
+<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
+<status status="PASS" start="2024-04-20T15:03:30.445098" elapsed="0.029000"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:30.474098" level="INFO">Selecting checkbox '//*[@id="user_register_form"]/fieldset/label[3]/input'.</msg>
+<arg>//*[@id="user_register_form"]/fieldset/label[3]/input</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-20T15:03:30.474098" elapsed="0.065318"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:30.539416" level="INFO">Clicking button '//*[@id="user_register_form"]/fieldset/footer/button'.</msg>
+<arg>//*[@id="user_register_form"]/fieldset/footer/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-20T15:03:30.539416" elapsed="1.574206"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//*[@id="main_content"]/div/div/h1</arg>
+<arg>timeout=7</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-20T15:03:32.113622" elapsed="0.021575"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:32.154675" level="INFO">${my_message} = Dziękujemy za założenie nowego konta.</msg>
+<var>${my_message}</var>
+<arg>//*[@id="main_content"]/div/div/h1</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-20T15:03:32.135197" elapsed="0.019478"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${my_message}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-04-20T15:03:32.154675" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${my_message}</arg>
+<arg>${message}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-04-20T15:03:32.155675" elapsed="0.000000"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:32.269203" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-35.png"&gt;&lt;img src="selenium-screenshot-35.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-04-20T15:03:32.155675" elapsed="0.113528"/>
+</kw>
+<arg>${emails}[${i}]</arg>
+<arg>${passwords}[${i}]</arg>
+<status status="PASS" start="2024-04-20T15:03:29.176139" elapsed="3.093064"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-04-20T15:03:32.270210" level="INFO">User a1email3@wwp.pl</msg>
+<arg>User ${emails}[${i}]</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-04-20T15:03:32.270210" elapsed="0.000000"/>
+</kw>
 <var name="${i}">2</var>
-<status status="PASS" start="2024-04-20T14:23:18.379793" elapsed="0.000000"/>
+<status status="PASS" start="2024-04-20T15:03:29.175128" elapsed="3.095082"/>
 </iter>
 <iter>
-<kw name="Log" owner="BuiltIn">
-<msg time="2024-04-20T14:23:18.380876" level="INFO">3</msg>
-<arg>${i}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-04-20T14:23:18.379793" elapsed="0.001083"/>
+<kw name="Registration In Forum">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:32.271218" level="INFO">Clicking element '//*[@id="navTop"]/nav/ul[1]/li[2]/a'.</msg>
+<arg>//*[@id="navTop"]/nav/ul[1]/li[2]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-20T15:03:32.271218" elapsed="0.656477"/>
 </kw>
-<if>
-<branch type="IF" condition="${i} == 3">
-<kw name="Log" owner="BuiltIn">
-<msg time="2024-04-20T14:23:18.380876" level="INFO">3</msg>
-<arg>${i}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-04-20T14:23:18.380876" elapsed="0.000000"/>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:32.928709" level="INFO">Clicking button '/html/body/div[1]/div/div/div/div[2]/div/button[2]'.</msg>
+<msg time="2024-04-20T15:03:33.080755" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-36.png"&gt;&lt;img src="selenium-screenshot-36.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-04-20T15:03:33.080755" level="FAIL">Button with locator '/html/body/div[1]/div/div/div/div[2]/div/button[2]' not found.</msg>
+<arg>/html/body/div[1]/div/div/div/div[2]/div/button[2]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="FAIL" start="2024-04-20T15:03:32.927695" elapsed="0.154062">Button with locator '/html/body/div[1]/div/div/div/div[2]/div/button[2]' not found.</status>
 </kw>
-<status status="PASS" start="2024-04-20T14:23:18.380876" elapsed="0.000000"/>
-</branch>
-<status status="PASS" start="2024-04-20T14:23:18.380876" elapsed="0.000000"/>
-</if>
+<arg>click button</arg>
+<arg>/html/body/div[1]/div/div/div/div[2]/div/button[2]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2024-04-20T15:03:32.927695" elapsed="0.154062"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:33.082763" level="INFO">Typing text 'a1email4@wwp.pl' into text field '//*[@id="f_cmu_email"]'.</msg>
+<arg>//*[@id="f_cmu_email"]</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-20T15:03:33.081757" elapsed="0.106513"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:33.189264" level="INFO">Typing text 'a1email4@wwp.pl' into text field '//*[@id="f_cmu_email2"]'.</msg>
+<arg>//*[@id="f_cmu_email2"]</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-20T15:03:33.188270" elapsed="0.091728"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:33.280988" level="INFO">Typing text 'pass4' into text field '//*[@id="f_cmu_password"]'.</msg>
+<arg>//*[@id="f_cmu_password"]</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-20T15:03:33.279998" elapsed="0.112166"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:33.393161" level="INFO">Typing text 'pass4' into text field '//*[@id="f_cmu_password2"]'.</msg>
+<arg>//*[@id="f_cmu_password2"]</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-20T15:03:33.393161" elapsed="0.082071"/>
+</kw>
+<kw name="Checkbox Should Not Be Selected" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:33.476231" level="INFO">Verifying checkbox '//*[@id="newsletter_agree"]' is not selected.</msg>
+<arg>//*[@id="newsletter_agree"]</arg>
+<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
+<status status="PASS" start="2024-04-20T15:03:33.475232" elapsed="0.031096"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:33.506328" level="INFO">Selecting checkbox '//*[@id="newsletter_agree"]'.</msg>
+<arg>//*[@id="newsletter_agree"]</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-20T15:03:33.506328" elapsed="0.089037"/>
+</kw>
+<kw name="Checkbox Should Not Be Selected" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:33.596372" level="INFO">Verifying checkbox '//*[@id="user_register_form"]/fieldset/label[2]/input' is not selected.</msg>
+<arg>//*[@id="user_register_form"]/fieldset/label[2]/input</arg>
+<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
+<status status="PASS" start="2024-04-20T15:03:33.595365" elapsed="0.037614"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:33.634063" level="INFO">Selecting checkbox '//*[@id="user_register_form"]/fieldset/label[2]/input'.</msg>
+<arg>//*[@id="user_register_form"]/fieldset/label[2]/input</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-20T15:03:33.634063" elapsed="0.074707"/>
+</kw>
+<kw name="Checkbox Should Not Be Selected" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:33.709861" level="INFO">Verifying checkbox '//*[@id="user_register_form"]/fieldset/label[3]/input' is not selected.</msg>
+<arg>//*[@id="user_register_form"]/fieldset/label[3]/input</arg>
+<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
+<status status="PASS" start="2024-04-20T15:03:33.709861" elapsed="0.028107"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:33.737968" level="INFO">Selecting checkbox '//*[@id="user_register_form"]/fieldset/label[3]/input'.</msg>
+<arg>//*[@id="user_register_form"]/fieldset/label[3]/input</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-20T15:03:33.737968" elapsed="0.068460"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:33.806428" level="INFO">Clicking button '//*[@id="user_register_form"]/fieldset/footer/button'.</msg>
+<arg>//*[@id="user_register_form"]/fieldset/footer/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-20T15:03:33.806428" elapsed="1.764106"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//*[@id="main_content"]/div/div/h1</arg>
+<arg>timeout=7</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-20T15:03:35.570534" elapsed="0.021970"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:35.611714" level="INFO">${my_message} = Dziękujemy za założenie nowego konta.</msg>
+<var>${my_message}</var>
+<arg>//*[@id="main_content"]/div/div/h1</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-20T15:03:35.592504" elapsed="0.019210"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${my_message}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-04-20T15:03:35.611714" elapsed="0.001000"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${my_message}</arg>
+<arg>${message}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-04-20T15:03:35.612714" elapsed="0.000000"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:35.726662" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-37.png"&gt;&lt;img src="selenium-screenshot-37.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-04-20T15:03:35.613718" elapsed="0.113940"/>
+</kw>
+<arg>${emails}[${i}]</arg>
+<arg>${passwords}[${i}]</arg>
+<status status="PASS" start="2024-04-20T15:03:32.270210" elapsed="3.457448"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-04-20T15:03:35.727658" level="INFO">User a1email4@wwp.pl</msg>
+<arg>User ${emails}[${i}]</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-04-20T15:03:35.727658" elapsed="0.001001"/>
+</kw>
 <var name="${i}">3</var>
-<status status="PASS" start="2024-04-20T14:23:18.379793" elapsed="0.001083"/>
+<status status="PASS" start="2024-04-20T15:03:32.270210" elapsed="3.458449"/>
 </iter>
 <iter>
-<kw name="Log" owner="BuiltIn">
-<msg time="2024-04-20T14:23:18.381886" level="INFO">4</msg>
-<arg>${i}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-04-20T14:23:18.380876" elapsed="0.001068"/>
+<kw name="Registration In Forum">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:35.730657" level="INFO">Clicking element '//*[@id="navTop"]/nav/ul[1]/li[2]/a'.</msg>
+<arg>//*[@id="navTop"]/nav/ul[1]/li[2]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-20T15:03:35.729658" elapsed="0.497469"/>
 </kw>
-<if>
-<branch type="IF" condition="${i} == 3">
-<kw name="Log" owner="BuiltIn">
-<arg>${i}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" start="2024-04-20T14:23:18.381963" elapsed="0.000000"/>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:36.228210" level="INFO">Clicking button '/html/body/div[1]/div/div/div/div[2]/div/button[2]'.</msg>
+<msg time="2024-04-20T15:03:36.382852" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-38.png"&gt;&lt;img src="selenium-screenshot-38.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-04-20T15:03:36.382852" level="FAIL">Button with locator '/html/body/div[1]/div/div/div/div[2]/div/button[2]' not found.</msg>
+<arg>/html/body/div[1]/div/div/div/div[2]/div/button[2]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="FAIL" start="2024-04-20T15:03:36.228210" elapsed="0.155647">Button with locator '/html/body/div[1]/div/div/div/div[2]/div/button[2]' not found.</status>
 </kw>
-<status status="NOT RUN" start="2024-04-20T14:23:18.381963" elapsed="0.000000"/>
-</branch>
-<status status="PASS" start="2024-04-20T14:23:18.381963" elapsed="0.000000"/>
-</if>
+<arg>click button</arg>
+<arg>/html/body/div[1]/div/div/div/div[2]/div/button[2]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2024-04-20T15:03:36.228210" elapsed="0.155647"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:36.384864" level="INFO">Typing text 'a1email5@wwp.pl' into text field '//*[@id="f_cmu_email"]'.</msg>
+<arg>//*[@id="f_cmu_email"]</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-20T15:03:36.384864" elapsed="0.094840"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:36.480704" level="INFO">Typing text 'a1email5@wwp.pl' into text field '//*[@id="f_cmu_email2"]'.</msg>
+<arg>//*[@id="f_cmu_email2"]</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-20T15:03:36.479704" elapsed="0.088070"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:36.567819" level="INFO">Typing text 'pass5' into text field '//*[@id="f_cmu_password"]'.</msg>
+<arg>//*[@id="f_cmu_password"]</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-20T15:03:36.567819" elapsed="0.082839"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:36.651668" level="INFO">Typing text 'pass5' into text field '//*[@id="f_cmu_password2"]'.</msg>
+<arg>//*[@id="f_cmu_password2"]</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-20T15:03:36.651668" elapsed="0.080251"/>
+</kw>
+<kw name="Checkbox Should Not Be Selected" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:36.731919" level="INFO">Verifying checkbox '//*[@id="newsletter_agree"]' is not selected.</msg>
+<arg>//*[@id="newsletter_agree"]</arg>
+<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
+<status status="PASS" start="2024-04-20T15:03:36.731919" elapsed="0.045103"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:36.777022" level="INFO">Selecting checkbox '//*[@id="newsletter_agree"]'.</msg>
+<arg>//*[@id="newsletter_agree"]</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-20T15:03:36.777022" elapsed="0.072755"/>
+</kw>
+<kw name="Checkbox Should Not Be Selected" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:36.849777" level="INFO">Verifying checkbox '//*[@id="user_register_form"]/fieldset/label[2]/input' is not selected.</msg>
+<arg>//*[@id="user_register_form"]/fieldset/label[2]/input</arg>
+<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
+<status status="PASS" start="2024-04-20T15:03:36.849777" elapsed="0.052466"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:36.902243" level="INFO">Selecting checkbox '//*[@id="user_register_form"]/fieldset/label[2]/input'.</msg>
+<arg>//*[@id="user_register_form"]/fieldset/label[2]/input</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-20T15:03:36.902243" elapsed="0.069783"/>
+</kw>
+<kw name="Checkbox Should Not Be Selected" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:36.972026" level="INFO">Verifying checkbox '//*[@id="user_register_form"]/fieldset/label[3]/input' is not selected.</msg>
+<arg>//*[@id="user_register_form"]/fieldset/label[3]/input</arg>
+<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
+<status status="PASS" start="2024-04-20T15:03:36.972026" elapsed="0.028343"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:37.000369" level="INFO">Selecting checkbox '//*[@id="user_register_form"]/fieldset/label[3]/input'.</msg>
+<arg>//*[@id="user_register_form"]/fieldset/label[3]/input</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-20T15:03:37.000369" elapsed="0.065139"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:37.065508" level="INFO">Clicking button '//*[@id="user_register_form"]/fieldset/footer/button'.</msg>
+<arg>//*[@id="user_register_form"]/fieldset/footer/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-20T15:03:37.065508" elapsed="1.346763"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//*[@id="main_content"]/div/div/h1</arg>
+<arg>timeout=7</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-20T15:03:38.413269" elapsed="0.031456"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:38.464732" level="INFO">${my_message} = Dziękujemy za założenie nowego konta.</msg>
+<var>${my_message}</var>
+<arg>//*[@id="main_content"]/div/div/h1</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-20T15:03:38.444725" elapsed="0.020007"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${my_message}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-04-20T15:03:38.464732" elapsed="0.000999"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${my_message}</arg>
+<arg>${message}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-04-20T15:03:38.465731" elapsed="0.000000"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:38.589942" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-39.png"&gt;&lt;img src="selenium-screenshot-39.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-04-20T15:03:38.465731" elapsed="0.125216"/>
+</kw>
+<arg>${emails}[${i}]</arg>
+<arg>${passwords}[${i}]</arg>
+<status status="PASS" start="2024-04-20T15:03:35.728659" elapsed="2.862288"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-04-20T15:03:38.590947" level="INFO">User a1email5@wwp.pl</msg>
+<arg>User ${emails}[${i}]</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-04-20T15:03:38.590947" elapsed="0.000000"/>
+</kw>
 <var name="${i}">4</var>
-<status status="PASS" start="2024-04-20T14:23:18.380876" elapsed="0.001087"/>
+<status status="PASS" start="2024-04-20T15:03:35.728659" elapsed="2.862288"/>
 </iter>
 <var>${i}</var>
 <value>5</value>
-<status status="PASS" start="2024-04-20T14:23:18.377551" elapsed="0.004412"/>
+<status status="PASS" start="2024-04-20T15:03:22.085009" elapsed="16.506940"/>
 </for>
-<kw name="Log" owner="BuiltIn">
-<msg time="2024-04-20T14:23:18.383067" level="INFO">koniec petli 1</msg>
-<arg>koniec petli 1</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-04-20T14:23:18.383067" elapsed="0.000000"/>
-</kw>
-<for flavor="IN RANGE">
-<iter>
-<kw name="Log" owner="BuiltIn">
-<msg time="2024-04-20T14:23:18.383067" level="INFO">2</msg>
-<arg>${i}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-04-20T14:23:18.383067" elapsed="0.000000"/>
-</kw>
-<var name="${i}">2</var>
-<status status="PASS" start="2024-04-20T14:23:18.383067" elapsed="0.001012"/>
-</iter>
-<iter>
-<kw name="Log" owner="BuiltIn">
-<msg time="2024-04-20T14:23:18.384165" level="INFO">7</msg>
-<arg>${i}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-04-20T14:23:18.384165" elapsed="0.000000"/>
-</kw>
-<var name="${i}">7</var>
-<status status="PASS" start="2024-04-20T14:23:18.384165" elapsed="0.000000"/>
-</iter>
-<iter>
-<kw name="Log" owner="BuiltIn">
-<msg time="2024-04-20T14:23:18.384165" level="INFO">12</msg>
-<arg>${i}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-04-20T14:23:18.384165" elapsed="0.000000"/>
-</kw>
-<var name="${i}">12</var>
-<status status="PASS" start="2024-04-20T14:23:18.384165" elapsed="0.000000"/>
-</iter>
-<var>${i}</var>
-<value>2</value>
-<value>17</value>
-<value>5</value>
-<status status="PASS" start="2024-04-20T14:23:18.383067" elapsed="0.001098"/>
-</for>
-<kw name="Log" owner="BuiltIn">
-<msg time="2024-04-20T14:23:18.385177" level="INFO">koniec petli 2</msg>
-<arg>koniec petli 2</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-04-20T14:23:18.384165" elapsed="0.001232"/>
-</kw>
-<status status="PASS" start="2024-04-20T14:23:18.376464" elapsed="0.008933"/>
+<status status="PASS" start="2024-04-20T15:03:14.678225" elapsed="23.914727"/>
 </test>
-<test id="s1-t2" name="For loop in range with index" line="22">
-<for flavor="IN RANGE">
-<iter>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>uzytkownik: ${imiona}[${i}] ${nazwiska}[${i}]</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-04-20T14:23:18.386514" elapsed="0.001089"/>
-</kw>
-<var name="${i}">0</var>
-<status status="PASS" start="2024-04-20T14:23:18.386514" elapsed="0.001089"/>
-</iter>
-<iter>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>uzytkownik: ${imiona}[${i}] ${nazwiska}[${i}]</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-04-20T14:23:18.387603" elapsed="0.000000"/>
-</kw>
-<var name="${i}">1</var>
-<status status="PASS" start="2024-04-20T14:23:18.387603" elapsed="0.000000"/>
-</iter>
-<iter>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>uzytkownik: ${imiona}[${i}] ${nazwiska}[${i}]</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-04-20T14:23:18.387603" elapsed="0.001081"/>
-</kw>
-<var name="${i}">2</var>
-<status status="PASS" start="2024-04-20T14:23:18.387603" elapsed="0.001081"/>
-</iter>
-<iter>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>uzytkownik: ${imiona}[${i}] ${nazwiska}[${i}]</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-04-20T14:23:18.388684" elapsed="0.000000"/>
-</kw>
-<var name="${i}">3</var>
-<status status="PASS" start="2024-04-20T14:23:18.388684" elapsed="0.000000"/>
-</iter>
-<var>${i}</var>
-<value>4</value>
-<status status="PASS" start="2024-04-20T14:23:18.386514" elapsed="0.002170"/>
-</for>
-<status status="PASS" start="2024-04-20T14:23:18.386514" elapsed="0.002170"/>
-</test>
-<test id="s1-t3" name="For loop in dictionary" line="27">
-<kw name="Log" owner="BuiltIn">
-<msg time="2024-04-20T14:23:18.390843" level="INFO">{'slowo': 'piesek', 'numer': '30', 'lista': ['pierwszy', 'drugi', 'trzeci', 'czwarty', 'piaty']}</msg>
-<arg>${dictionary}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-04-20T14:23:18.389761" elapsed="0.001082"/>
-</kw>
-<for flavor="IN">
-<iter>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>klucz i wartosc: ${item}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-04-20T14:23:18.390843" elapsed="0.000000"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>klucz: ${item}[0]</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-04-20T14:23:18.390843" elapsed="0.001081"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>wartosc: ${item}[1]</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-04-20T14:23:18.391924" elapsed="0.000000"/>
-</kw>
-<var name="${item}">('slowo', 'piesek')</var>
-<status status="PASS" start="2024-04-20T14:23:18.390843" elapsed="0.001081"/>
-</iter>
-<iter>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>klucz i wartosc: ${item}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-04-20T14:23:18.391924" elapsed="0.000000"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>klucz: ${item}[0]</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-04-20T14:23:18.391924" elapsed="0.001096"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>wartosc: ${item}[1]</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-04-20T14:23:18.393020" elapsed="0.000000"/>
-</kw>
-<var name="${item}">('numer', '30')</var>
-<status status="PASS" start="2024-04-20T14:23:18.391924" elapsed="0.001096"/>
-</iter>
-<iter>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>klucz i wartosc: ${item}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-04-20T14:23:18.393020" elapsed="0.000000"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>klucz: ${item}[0]</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-04-20T14:23:18.393020" elapsed="0.001101"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>wartosc: ${item}[1]</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-04-20T14:23:18.394121" elapsed="0.000000"/>
-</kw>
-<var name="${item}">('lista', ['pierwszy', 'drugi', 'trzeci', 'czwarty', 'piaty'])</var>
-<status status="PASS" start="2024-04-20T14:23:18.393020" elapsed="0.001101"/>
-</iter>
-<var>${item}</var>
-<value>&amp;{dictionary}</value>
-<status status="PASS" start="2024-04-20T14:23:18.390843" elapsed="0.003278"/>
-</for>
-<status status="PASS" start="2024-04-20T14:23:18.389761" elapsed="0.004360"/>
-</test>
-<test id="s1-t4" name="Zagniezdzone" line="35">
-<kw name="Create List" owner="BuiltIn">
-<msg time="2024-04-20T14:23:18.396216" level="INFO">@{letters} = [ a | b | c | d ]</msg>
-<var>@{letters}</var>
-<arg>a</arg>
-<arg>b</arg>
-<arg>c</arg>
-<arg>d</arg>
-<doc>Returns a list containing given items.</doc>
-<status status="PASS" start="2024-04-20T14:23:18.395217" elapsed="0.000999"/>
-</kw>
-<kw name="Create List" owner="BuiltIn">
-<msg time="2024-04-20T14:23:18.397306" level="INFO">@{numbers} = [ 1 | 2 | 3 ]</msg>
-<var>@{numbers}</var>
-<arg>${1}</arg>
-<arg>${2}</arg>
-<arg>${3}</arg>
-<doc>Returns a list containing given items.</doc>
-<status status="PASS" start="2024-04-20T14:23:18.396216" elapsed="0.001090"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2024-04-20T14:23:18.397306" level="INFO">['a', 'b', 'c', 'd']</msg>
-<arg>${letters}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-04-20T14:23:18.397306" elapsed="0.000000"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2024-04-20T14:23:18.398416" level="INFO">[1, 2, 3]</msg>
-<arg>${numbers}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-04-20T14:23:18.398416" elapsed="0.000000"/>
-</kw>
-<for flavor="IN">
-<iter>
-<for flavor="IN">
-<iter>
-<kw name="Log" owner="BuiltIn">
-<msg time="2024-04-20T14:23:18.398416" level="INFO">a 1</msg>
-<arg>${letter} ${number}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-04-20T14:23:18.398416" elapsed="0.000000"/>
-</kw>
-<var name="${number}">1</var>
-<status status="PASS" start="2024-04-20T14:23:18.398416" elapsed="0.000000"/>
-</iter>
-<iter>
-<kw name="Log" owner="BuiltIn">
-<msg time="2024-04-20T14:23:18.399499" level="INFO">a 2</msg>
-<arg>${letter} ${number}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-04-20T14:23:18.399478" elapsed="0.000021"/>
-</kw>
-<var name="${number}">2</var>
-<status status="PASS" start="2024-04-20T14:23:18.398416" elapsed="0.001083"/>
-</iter>
-<iter>
-<kw name="Log" owner="BuiltIn">
-<msg time="2024-04-20T14:23:18.399499" level="INFO">a 3</msg>
-<arg>${letter} ${number}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-04-20T14:23:18.399499" elapsed="0.000000"/>
-</kw>
-<var name="${number}">3</var>
-<status status="PASS" start="2024-04-20T14:23:18.399499" elapsed="0.000000"/>
-</iter>
-<var>${number}</var>
-<value>@{numbers}</value>
-<status status="PASS" start="2024-04-20T14:23:18.398416" elapsed="0.001083"/>
-</for>
-<var name="${letter}">a</var>
-<status status="PASS" start="2024-04-20T14:23:18.398416" elapsed="0.001083"/>
-</iter>
-<iter>
-<for flavor="IN">
-<iter>
-<kw name="Log" owner="BuiltIn">
-<msg time="2024-04-20T14:23:18.399499" level="INFO">b 1</msg>
-<arg>${letter} ${number}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-04-20T14:23:18.399499" elapsed="0.000000"/>
-</kw>
-<var name="${number}">1</var>
-<status status="PASS" start="2024-04-20T14:23:18.399499" elapsed="0.000000"/>
-</iter>
-<iter>
-<kw name="Log" owner="BuiltIn">
-<msg time="2024-04-20T14:23:18.400579" level="INFO">b 2</msg>
-<arg>${letter} ${number}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-04-20T14:23:18.400579" elapsed="0.000000"/>
-</kw>
-<var name="${number}">2</var>
-<status status="PASS" start="2024-04-20T14:23:18.400509" elapsed="0.000070"/>
-</iter>
-<iter>
-<kw name="Log" owner="BuiltIn">
-<msg time="2024-04-20T14:23:18.400579" level="INFO">b 3</msg>
-<arg>${letter} ${number}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-04-20T14:23:18.400579" elapsed="0.000000"/>
-</kw>
-<var name="${number}">3</var>
-<status status="PASS" start="2024-04-20T14:23:18.400579" elapsed="0.000000"/>
-</iter>
-<var>${number}</var>
-<value>@{numbers}</value>
-<status status="PASS" start="2024-04-20T14:23:18.399499" elapsed="0.001080"/>
-</for>
-<var name="${letter}">b</var>
-<status status="PASS" start="2024-04-20T14:23:18.399499" elapsed="0.001080"/>
-</iter>
-<iter>
-<for flavor="IN">
-<iter>
-<kw name="Log" owner="BuiltIn">
-<msg time="2024-04-20T14:23:18.400579" level="INFO">c 1</msg>
-<arg>${letter} ${number}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-04-20T14:23:18.400579" elapsed="0.000000"/>
-</kw>
-<var name="${number}">1</var>
-<status status="PASS" start="2024-04-20T14:23:18.400579" elapsed="0.000000"/>
-</iter>
-<iter>
-<kw name="Log" owner="BuiltIn">
-<msg time="2024-04-20T14:23:18.401661" level="INFO">c 2</msg>
-<arg>${letter} ${number}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-04-20T14:23:18.401641" elapsed="0.000020"/>
-</kw>
-<var name="${number}">2</var>
-<status status="PASS" start="2024-04-20T14:23:18.401589" elapsed="0.000072"/>
-</iter>
-<iter>
-<kw name="Log" owner="BuiltIn">
-<msg time="2024-04-20T14:23:18.401661" level="INFO">c 3</msg>
-<arg>${letter} ${number}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-04-20T14:23:18.401661" elapsed="0.000000"/>
-</kw>
-<var name="${number}">3</var>
-<status status="PASS" start="2024-04-20T14:23:18.401661" elapsed="0.000000"/>
-</iter>
-<var>${number}</var>
-<value>@{numbers}</value>
-<status status="PASS" start="2024-04-20T14:23:18.400579" elapsed="0.001082"/>
-</for>
-<var name="${letter}">c</var>
-<status status="PASS" start="2024-04-20T14:23:18.400579" elapsed="0.001082"/>
-</iter>
-<iter>
-<for flavor="IN">
-<iter>
-<kw name="Log" owner="BuiltIn">
-<msg time="2024-04-20T14:23:18.402673" level="INFO">d 1</msg>
-<arg>${letter} ${number}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-04-20T14:23:18.401661" elapsed="0.001012"/>
-</kw>
-<var name="${number}">1</var>
-<status status="PASS" start="2024-04-20T14:23:18.401661" elapsed="0.001012"/>
-</iter>
-<iter>
-<kw name="Log" owner="BuiltIn">
-<msg time="2024-04-20T14:23:18.402893" level="INFO">d 2</msg>
-<arg>${letter} ${number}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-04-20T14:23:18.402893" elapsed="0.000000"/>
-</kw>
-<var name="${number}">2</var>
-<status status="PASS" start="2024-04-20T14:23:18.402856" elapsed="0.000037"/>
-</iter>
-<iter>
-<kw name="Log" owner="BuiltIn">
-<msg time="2024-04-20T14:23:18.402893" level="INFO">d 3</msg>
-<arg>${letter} ${number}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-04-20T14:23:18.402893" elapsed="0.000000"/>
-</kw>
-<var name="${number}">3</var>
-<status status="PASS" start="2024-04-20T14:23:18.402893" elapsed="0.000000"/>
-</iter>
-<var>${number}</var>
-<value>@{numbers}</value>
-<status status="PASS" start="2024-04-20T14:23:18.401661" elapsed="0.001232"/>
-</for>
-<var name="${letter}">d</var>
-<status status="PASS" start="2024-04-20T14:23:18.401661" elapsed="0.001232"/>
-</iter>
-<var>${letter}</var>
-<value>@{letters}</value>
-<status status="PASS" start="2024-04-20T14:23:18.398416" elapsed="0.004477"/>
-</for>
-<status status="PASS" start="2024-04-20T14:23:18.395217" elapsed="0.007676"/>
-</test>
-<status status="PASS" start="2024-04-20T14:23:18.348699" elapsed="0.055285"/>
-</suite>
-<statistics>
-<total>
-<stat pass="4" fail="0" skip="0">All Tests</stat>
-</total>
-<tag>
-</tag>
-<suite>
-<stat pass="4" fail="0" skip="0" id="s1" name="3 Petle">3 Petle</stat>
-</suite>
-</statistics>
+<test id="s1-t2" name="Unsuccessful Regiustratoin Different Names" line="45">
+<kw name="Open My Browser" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-20T15:03:38.595977" level="INFO">Opening browser 'Chrome' to base url 'https://gotujmy.pl/forum/'.</msg>
 <errors>
+<msg time="2024-04-20T15:03:41.632770" level="ERROR">Execution stopped by user.</msg>
 </errors>
 </robot>
