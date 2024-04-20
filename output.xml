@@ -1,117 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.11.2 on win32)" generated="2024-04-20T11:36:33.562632" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.11.2 on win32)" generated="2024-04-20T11:55:52.356623" rpa="false" schemaversion="5">
 <suite id="s1" name="1 Wikipedia" source="C:\Users\vdi-student\Desktop\Tor_Robot_200424\1_wikipedia.robot">
-<test id="s1-t1" name="Test 1" line="13">
+<test id="s1-t1" name="Correct log in Wikipedia" line="27">
+<kw name="Login Wikipedia">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-04-20T11:36:33.810584" level="INFO">Opening browser 'chrome' to base url 'https://pl.wikipedia.org/'.</msg>
+<msg time="2024-04-20T11:55:52.596204" level="INFO">Opening browser 'chrome' to base url 'https://pl.wikipedia.org/'.</msg>
 <arg>https://pl.wikipedia.org/</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-04-20T11:36:33.810584" elapsed="1.587120"/>
+<status status="PASS" start="2024-04-20T11:55:52.596204" elapsed="1.580020"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-04-20T11:36:36.398852" level="INFO">Slept 1 second.</msg>
+<msg time="2024-04-20T11:55:55.177713" level="INFO">Slept 1 second.</msg>
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-04-20T11:36:35.398773" elapsed="1.000079"/>
+<status status="PASS" start="2024-04-20T11:55:54.177239" elapsed="1.000474"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-04-20T11:36:36.399973" level="INFO">Clicking element 'id:pt-login-2'.</msg>
+<msg time="2024-04-20T11:55:55.178714" level="INFO">Clicking element 'id:pt-login-2'.</msg>
 <arg>id:pt-login-2</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-20T11:36:36.399973" elapsed="0.993776"/>
+<status status="PASS" start="2024-04-20T11:55:55.177713" elapsed="0.823839"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-04-20T11:36:38.395524" level="INFO">Slept 1 second.</msg>
+<msg time="2024-04-20T11:55:57.001764" level="INFO">Slept 1 second.</msg>
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-04-20T11:36:37.393749" elapsed="1.001775"/>
+<status status="PASS" start="2024-04-20T11:55:56.001552" elapsed="1.000212"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-04-20T11:36:38.396606" level="INFO">Typing text 'RobotTests' into text field 'id:wpName1'.</msg>
+<msg time="2024-04-20T11:55:57.001764" level="INFO">Typing text 'Kamil' into text field 'id:wpName1'.</msg>
 <arg>id:wpName1</arg>
-<arg>${wikipedia login}</arg>
+<arg>${login}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-20T11:36:38.395524" elapsed="0.090516"/>
+<status status="PASS" start="2024-04-20T11:55:57.001764" elapsed="0.078830"/>
 </kw>
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2024-04-20T11:36:38.487041" level="INFO">Typing password into text field 'id:wpPassword1'.</msg>
-<msg time="2024-04-20T11:36:38.526282" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2024-04-20T11:55:57.082596" level="INFO">Typing password into text field 'id:wpPassword1'.</msg>
+<msg time="2024-04-20T11:55:57.118641" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>id:wpPassword1</arg>
-<arg>${wikipedia wrong password}</arg>
+<arg>${password}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-20T11:36:38.487041" elapsed="0.093732"/>
+<status status="PASS" start="2024-04-20T11:55:57.081593" elapsed="0.092558"/>
 </kw>
 <kw name="Checkbox Should Not Be Selected" owner="SeleniumLibrary">
-<msg time="2024-04-20T11:36:38.581772" level="INFO">Verifying checkbox 'id:wpRemember' is not selected.</msg>
+<msg time="2024-04-20T11:55:57.175161" level="INFO">Verifying checkbox 'id:wpRemember' is not selected.</msg>
 <arg>id:wpRemember</arg>
 <doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
-<status status="PASS" start="2024-04-20T11:36:38.581772" elapsed="0.050499"/>
+<status status="PASS" start="2024-04-20T11:55:57.174151" elapsed="0.043105"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-04-20T11:36:39.633661" level="INFO">Slept 1 second.</msg>
+<msg time="2024-04-20T11:55:58.217903" level="INFO">Slept 1 second.</msg>
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-04-20T11:36:38.633358" elapsed="1.000303"/>
+<status status="PASS" start="2024-04-20T11:55:57.217256" elapsed="1.000647"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-04-20T11:36:39.634763" level="INFO">Clicking button 'id:wpLoginAttempt'.</msg>
+<msg time="2024-04-20T11:55:58.217903" level="INFO">Clicking button 'id:wpLoginAttempt'.</msg>
 <arg>id:wpLoginAttempt</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-20T11:36:39.634737" elapsed="0.082350"/>
+<status status="PASS" start="2024-04-20T11:55:58.217903" elapsed="1.082074"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-04-20T11:36:40.718702" level="INFO">Slept 1 second.</msg>
+<msg time="2024-04-20T11:56:00.301049" level="INFO">Slept 1 second.</msg>
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-04-20T11:36:39.718085" elapsed="1.000617"/>
+<status status="PASS" start="2024-04-20T11:55:59.300979" elapsed="1.000070"/>
+</kw>
+<arg>Kamil</arg>
+<arg>haslo</arg>
+<status status="PASS" start="2024-04-20T11:55:52.595125" elapsed="7.705924"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-04-20T11:56:00.400029" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-04-20T11:56:00.400029" level="FAIL">The element '//*[@id="n-mainpage-description"]/a/span' should be visible, but it is not.</msg>
+<arg>//*[@id="n-mainpage-description"]/a/span</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="FAIL" start="2024-04-20T11:56:00.302038" elapsed="0.099995">The element '//*[@id="n-mainpage-description"]/a/span' should be visible, but it is not.</status>
+</kw>
+<status status="FAIL" start="2024-04-20T11:55:52.594046" elapsed="7.807987">The element '//*[@id="n-mainpage-description"]/a/span' should be visible, but it is not.</status>
+</test>
+<test id="s1-t2" name="Incorrect Log In Wikipedia" line="31">
+<kw name="Login Wikipedia">
+<msg time="2024-04-20T11:56:00.404034" level="FAIL">Keyword 'Login Wikipedia' expected 2 arguments, got 0.</msg>
+<status status="FAIL" start="2024-04-20T11:56:00.404034" elapsed="0.000000">Keyword 'Login Wikipedia' expected 2 arguments, got 0.</status>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-04-20T11:36:40.748248" level="INFO">${my error message} = Nazwa użytkownika</msg>
 <var>${my error message}</var>
 <arg>xpath:/html/body/div[2]/div/div[3]/main/div[3]/div[3]/div[1]/div[3]/form/div[1]/div</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-20T11:36:40.719695" elapsed="0.028553"/>
+<status status="NOT RUN" start="2024-04-20T11:56:00.405051" elapsed="0.000000"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${my error message}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-04-20T11:36:40.749263" elapsed="0.000982"/>
+<status status="NOT RUN" start="2024-04-20T11:56:00.405051" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-04-20T11:36:40.750245" level="INFO">Nazwa użytkownika</msg>
 <arg>${my error message}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-04-20T11:36:40.750245" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-04-20T11:56:00.406036" elapsed="0.000000"/>
 </kw>
 <kw name="Should Be Equal" owner="BuiltIn">
-<msg time="2024-04-20T11:36:40.751455" level="FAIL">Podany login lub hasło są nieprawidłowe. Spróbuj jeszcze raz. != Nazwa użytkownika</msg>
 <arg>${error message}</arg>
 <arg>${my error message}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="FAIL" start="2024-04-20T11:36:40.751455" elapsed="0.000000">Podany login lub hasło są nieprawidłowe. Spróbuj jeszcze raz. != Nazwa użytkownika</status>
+<status status="NOT RUN" start="2024-04-20T11:56:00.406036" elapsed="0.000000"/>
 </kw>
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<arg>my screen-{index}.png</arg>
+<arg>../screens/my screen-{index}.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="NOT RUN" start="2024-04-20T11:36:40.752538" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-04-20T11:56:00.406036" elapsed="0.000000"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2024-04-20T11:36:40.752538" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-04-20T11:56:00.407033" elapsed="0.000000"/>
 </kw>
-<status status="FAIL" start="2024-04-20T11:36:33.809506" elapsed="6.944042">Podany login lub hasło są nieprawidłowe. Spróbuj jeszcze raz. != Nazwa użytkownika</status>
+<status status="FAIL" start="2024-04-20T11:56:00.404034" elapsed="0.002999">Keyword 'Login Wikipedia' expected 2 arguments, got 0.</status>
 </test>
-<status status="FAIL" start="2024-04-20T11:36:33.564781" elapsed="7.189767"/>
+<status status="FAIL" start="2024-04-20T11:55:52.358721" elapsed="8.049312"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="1 Wikipedia">1 Wikipedia</stat>
+<stat pass="0" fail="2" skip="0" id="s1" name="1 Wikipedia">1 Wikipedia</stat>
 </suite>
 </statistics>
 <errors>
