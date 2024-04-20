@@ -9,7 +9,9 @@ Library    SeleniumLibrary
 
 *** Test Cases ***
 Test 1
-    open browser    https://www.wikipedia.org/    chrome    executable_path=scierzka
+    open browser    https://pl.wikipedia.org/    chrome    #executable_path=sciezka do sterownika
+    sleep    3
+    click element    id:pt-login-2
+    sleep    3
 
-
-#    close browser
+    close browser
