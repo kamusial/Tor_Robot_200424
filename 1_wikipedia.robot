@@ -9,4 +9,7 @@ Library    SeleniumLibrary
 
 *** Test Cases ***
 Test 1
-    open browser    https://www.wikipedia.org/    ff
+    open browser    https://www.wikipedia.org/    chrome    executable_path=scierzka
+
+
+#    close browser
