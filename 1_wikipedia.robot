@@ -13,5 +13,7 @@ Test 1
     sleep    3
     click element    id:pt-login-2
     sleep    3
-
+    input text    id:wpName1    Kamil
+    input text    id:wpPassword1    haslo
+    sleep    3
     close browser
