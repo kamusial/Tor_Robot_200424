@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.2 on win32)" generated="2024-04-20T09:20:40.520812" rpa="false" schemaversion="5">
+<suite id="s1" name="1 Wikipedia" source="C:\Users\vdi-student\Desktop\Tor_Robot_200424\1_wikipedia.robot">
+<test id="s1-t1" name="Test 1" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-20T09:20:40.931185" level="INFO">Opening browser 'ff' to base url 'https://www.wikipedia.org/'.</msg>
+<msg time="2024-04-20T09:20:40.952076" level="INFO">Executing: C:\Users\vdi-student\AppData\Roaming\Python\Python311\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser firefox --output json</msg>
+<arg>https://www.wikipedia.org/</arg>
+<arg>ff</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-20T09:20:40.931185" elapsed="5.585497"/>
+</kw>
+<status status="PASS" start="2024-04-20T09:20:40.930106" elapsed="5.586576"/>
+</test>
+<status status="PASS" start="2024-04-20T09:20:40.522973" elapsed="5.995795"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="1 Wikipedia">1 Wikipedia</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
